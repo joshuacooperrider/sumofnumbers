@@ -21,11 +21,11 @@ function sumRecursion(numbers, index) {
     }
     return numbers[index] + sumRecursion(numbers, index + 1);
 }
-function sumTheFunctionalWay(numbers) {
+function sumFunction(numbers) {
     return numbers.reduce(function (acc, curr) { return acc + curr; }, 0);
 }
 // Testing the functions
 console.log(sumFor([1, 2, 3, 4])); // Output: 10
 console.log(sumWhile([1, 2, 3, 4])); // Output: 10
 console.log(sumRecursion([1, 2, 3, 4])); // Output: 10
-console.log(sumTheFunctionalWay([1, 2, 3, 4])); // Output: 10
+console.log(sumFunction([1, 2, 3, 4])); // Output: 10
